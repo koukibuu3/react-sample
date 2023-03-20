@@ -4,24 +4,18 @@ import { List } from 'semantic-ui-react'
 
 import { Navigate, Route, Routes } from 'react-router'
 import Home from 'components/pages/Home'
-import Hooks from 'components/pages/Hooks'
 import ReactTutorial from 'ReactTutorial'
 import 'App.css'
 
 const App: React.VFC = () => (
   <>
     <div className="container">
-      <h1 className="ui header">
-        りあクト! TypeScriptで始めるつらくないReact開発
-      </h1>
+      <b className="ui header">React 練習用</b>
       <div className="ui divider" />
       <nav>
         <List as="ul">
           <List.Item as="li">
-            <Link to="/">Home</Link>
-          </List.Item>
-          <List.Item as="li">
-            <Link to="hooks">Hooks</Link>
+            <Link to="/">りあクト! TypeScriptで始めるつらくないReact開発</Link>
           </List.Item>
           <List.Item as="li">
             <Link to="react_tutorial">React 公式チュートリアル</Link>
@@ -31,7 +25,6 @@ const App: React.VFC = () => (
       <div className="ui divider" />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="hooks" element={<Hooks />} />
         {/* <Route path="characters" element={<Characters />}>
           <Route path="" element={<AllCharacters />} />
           <Route path=":schoolCode" element={<SchoolCharacters />} />
