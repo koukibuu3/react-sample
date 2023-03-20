@@ -5,6 +5,7 @@ import { List } from 'semantic-ui-react'
 import { Navigate, Route, Routes } from 'react-router'
 import Home from 'components/pages/Home'
 import Hooks from 'components/pages/Hooks'
+import ReactTutorial from 'ReactTutorial'
 import 'App.css'
 
 const App: React.VFC = () => (
@@ -22,6 +23,9 @@ const App: React.VFC = () => (
           <List.Item as="li">
             <Link to="hooks">Hooks</Link>
           </List.Item>
+          <List.Item as="li">
+            <Link to="react_tutorial">React 公式チュートリアル</Link>
+          </List.Item>
         </List>
       </nav>
       <div className="ui divider" />
@@ -32,6 +36,7 @@ const App: React.VFC = () => (
           <Route path="" element={<AllCharacters />} />
           <Route path=":schoolCode" element={<SchoolCharacters />} />
         </Route> */}
+        <Route path="react_tutorial" element={<ReactTutorial />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>
