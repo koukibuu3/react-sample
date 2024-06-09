@@ -109,7 +109,7 @@ const App = () => {
         item.isFolder ? (
           <span
             {...context.arrowProps}
-            className="z-10 h-5 w-5 p-0.5 border text-center border-black bg-slate-100"
+            className="z-10 h-5 w-5 p-0.5 mr- border text-center border-black bg-slate-100"
           >
             {context.isExpanded ? <FaChevronDown /> : <CgLoadbar />}
           </span>
